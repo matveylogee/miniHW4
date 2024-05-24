@@ -1,0 +1,12 @@
+type Task {
+    desc: String!
+    title: String!
+}
+
+type Query {
+    findAll: [Task]
+}
+
+type Mutation {
+    createTask(desc: String!, title: String!): Task
+}
